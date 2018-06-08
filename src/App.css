@@ -1,5 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+body{
+  background-color: black;
+}
+
+.NavigationBarStyle{
+  display: flex;
+  font-style: italic;
+  font-family: 'Permanent Marker', 'cursive', 'Concert One';
+  position: fixed;
+  top:2.5em;
+  right:5em;
+
+}
+
+.NavItemStyle{
+  padding: 13px;
+  font-size: 1.3em;
+  cursor:pointer;
+  color: #ECF0F1;
+}
+
+.small-menu-classname{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+a:hover {
+  color: #F5B041;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#flyoutMenu{
+  display: none;
+}
+
+.Menuitem{
+  padding: 15px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 800px){
+  .NavigationBarStyle{
+    display: none;
+  }
+
+#flyoutMenu{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 100vh;
+  background-color: #AED6F1;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+  z-index: 3000;
+  }
+
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+
+}
+
 .App {
-  text-align: center;
+  font-style: italic;
+  font-family: 'Permanent Marker', 'cursive', 'Concert One';
 }
 
 .App-logo {
