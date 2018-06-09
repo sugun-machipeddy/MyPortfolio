@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header>
+      
           <NavigationBar/>
-        </header>
+
         <Main/>
       </div>
     );

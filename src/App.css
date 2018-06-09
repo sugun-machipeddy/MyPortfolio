@@ -5,14 +5,24 @@ body{
   background-color: black;
 }
 
+.foo{
+  padding: 5px;
+}
+
+.foo2{
+  align-self: flex-end;
+  animation: rightdirect 0.5s infinite;
+}
+
 .NavigationBarStyle{
   display: flex;
   font-style: italic;
   font-family: 'Permanent Marker', 'cursive', 'Concert One';
   position: fixed;
-  top:2.5em;
-  right:5em;
-
+  top:0.5em;
+  right:3em;
+  margin-bottom: 28px;
+  z-index: 1000;
 }
 
 .NavItemStyle{
@@ -56,6 +66,9 @@ a:active {
 #flyoutMenu{
   display: flex;
   flex-direction: column;
+  font-style: italic;
+  font-family: 'Permanent Marker', 'cursive', 'Concert One';
+  font-size: 1.3em;
   width: 40vw;
   height: 100vh;
   background-color: #AED6F1;
@@ -80,8 +93,12 @@ a:active {
 }
 
 .App {
-  font-style: italic;
-  font-family: 'Permanent Marker', 'cursive', 'Concert One';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .App-logo {
@@ -90,21 +107,26 @@ a:active {
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  color: #ECF0F1;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-family: 'Permanent Marker', 'cursive', 'Concert One';
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-style: italic;
+  font-family: 'Permanent Marker', 'cursive', 'Concert One';
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  color: #ECF0F1;
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes rightdirect {
+  0% {right: 0px;}
+  100% {right: 10px;}
 }
