@@ -1,10 +1,57 @@
 import React from 'react';
-
+import {RevealP} from '../Theme/styles.js';
+import WhenInView from './WhenInView.jsx';
+const headerStyle={
+  fontSize:'40px',
+};
+const breakStyle={
+  fontSize:'25px',
+};
 
 export default class About extends React.Component{
   render(){
     return(
-      <div>Hii</div>
+      <div className="App-About">
+        <p style={headerStyle}>About Me</p>
+        <WhenInView>
+          {({isInView}) =>
+          <RevealP hide={!isInView}>
+            I'm into all things engineering, Electrical and Software. I like to immerse myself into
+            the world of technology and motion pictures. I have a Bachelor's degree in Electrical and
+            Electronics Engineering from SASTRA University, India. As an undergraduate, I was sponsored
+            to spend a semester as an exchange student at The University of Bologna,Italy and even co-authored
+            a research paper titled "Modelling partial discharge inception in magnet wires at different altitudes"
+            </RevealP>}
+        </WhenInView>
+
+        <WhenInView>
+          {({isInView}) =>
+          <RevealP hide={!isInView}>
+            Then, I worked as an Associate Software Engineer at Robert Bosch Engineering and Business Solutions, India.
+            I was into Continous Integration (CI) and we built custom Linux distributions for automotive infotainment
+            systems using YOCTO Project. I was the lead for Generation3 SABRE iMX6 series of boards. We also practiced
+            devOps and automated the complete process from building to deployment to testing.
+          </RevealP>}
+        </WhenInView>
+
+        <WhenInView>
+          {({isInView}) =>
+          <RevealP hide={!isInView}>
+            Currently, I am pursuing my Masters in Electrical and Electronics Engineering at The university of British Columbia.
+            Over the years, i learnt that I can teach myself pretty much anything and presently am trying my hands at machine learning
+            and front-end develoment. I am adept at coding in python, c++ and java.
+          </RevealP>}
+        </WhenInView>
+
+        <WhenInView>
+          {({isInView}) =>
+          <RevealP hide={!isInView}>
+            I like to spend my free time either reading or watching TV seies. i also enjoy music and love travelling.
+          </RevealP>}
+        </WhenInView>
+
+        <p>I beleive that all dreams can come true if we have the courage to pursue them.</p>
+          </div>
     );
   }
 }

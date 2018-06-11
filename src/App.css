@@ -122,6 +122,16 @@ a:active {
   color: #ECF0F1;
 }
 
+.App-About {
+  padding-top: 80px;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-family: 'Alegreya';
+  font-size: 25px;
+  color: #ECF0F1;
+  text-align: justify
+}
+
 .App-intro {
   font-size: large;
 }
