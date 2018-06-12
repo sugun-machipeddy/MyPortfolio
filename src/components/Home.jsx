@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaAngleDoubleRight} from 'react-icons/lib/fa';
 import {Link} from 'react-router-dom';
+import '../App.css';
 
 
 export default  class Home extends React.Component{

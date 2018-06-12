@@ -5,8 +5,30 @@ body{
   background-color: black;
 }
 
+input{
+  border: 2px solid silver;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+textarea{
+  border: 2px solid silver;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.image-radius{
+border-radius: 50%;
+}
+
+.image-radius:hover{
+  transform: scale(1.5);
+}
+
 .foo{
   padding: 5px;
+  background-color: transparent;
+  border: 0px;
 }
 
 .foo2{
@@ -14,27 +36,29 @@ body{
   animation: rightdirect 0.5s infinite;
 }
 
+
 .NavigationBarStyle{
   display: flex;
   font-style: italic;
   font-family: 'Permanent Marker', 'cursive', 'Concert One';
   position: fixed;
+  background-color: #839192;
   top:0.5em;
   right:3em;
-  margin-bottom: 28px;
   z-index: 1000;
 }
 
 .NavItemStyle{
-  padding: 13px;
+  padding-right: 25px;
   font-size: 1.3em;
   cursor:pointer;
   color: #ECF0F1;
 }
 
 .small-menu-classname{
+  padding-top: 5px;
+  padding-left: 4px;
   display: flex;
-  padding-bottom: 20px;
 }
 
 a:hover {
@@ -123,17 +147,47 @@ a:active {
 }
 
 .App-About {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-right: 10%;
   padding-left: 10%;
   font-family: 'Alegreya';
   font-size: 25px;
   color: #ECF0F1;
-  text-align: justify
+  text-align: left;
 }
 
 .App-intro {
   font-size: large;
+}
+
+#slide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column-wrap;
+    position: relative;
+    font-size: 18px;
+    left: -1000px;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+#slide1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column-wrap;
+    position: relative;
+    font-size: 18px;
+    right: -1000px;
+    animation: slide1 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide1 {
+    100% { right: 0; }
 }
 
 @keyframes rightdirect {
