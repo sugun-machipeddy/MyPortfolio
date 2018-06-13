@@ -2,6 +2,10 @@ import React from 'react';
 import {RevealP, RevealL} from '../Theme/styles.js';
 import WhenInView from './WhenInView.jsx';
 import '../App.css';
+import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
+import {Link} from 'react-router-dom';
+
+
 const headerStyle={
   fontSize:'40px',
 };
@@ -12,9 +16,12 @@ const breakStyle={
 export default class About extends React.Component{
   render(){
     return(
+      <div>
+        <Link to="/Work"><FaAngleDoubleRight size={30} color="white" className="foo3"/></Link>
+        <Link to="/"><FaAngleDoubleLeft size={30} color="white" className="foo4"/></Link>
       <div className="App-About">
         <p style={headerStyle}>About Me</p>
-        <img src={require('../Images/DSC03197.JPG')} alt='instagram' align='middle' height="180" width="180" className="image-radius"/>
+        <img src={require('../Images/DSC03197.JPG')} alt='instagram' align='middle' height="150" width="150" className="image-radius"/>
         <WhenInView>
           {({isInView}) =>
           <RevealP hide={!isInView}>
@@ -61,7 +68,8 @@ export default class About extends React.Component{
           <br/>
           <button className="foo" type="submit"><img src={require('../Images/transparent.png')} alt='send' align='middle' height="40" width="40" /></button>
         </form>
-          </div>
+        </div>
+    </div>
     );
   }
 }

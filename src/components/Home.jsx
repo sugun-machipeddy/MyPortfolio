@@ -14,7 +14,7 @@ export default  class Home extends React.Component{
         <p className="App-title">The University of British Columbia</p> <br/>
         <p><a href="https://www.linkedin.com/in/sugun-machipeddy/" target="_blank"><img src={require('../Images/Linkedin.png')} alt='linkedin' align='middle' height="30" width="30"  className="foo"/></a>
         <a href="https://www.instagram.com/sugun.machipeddy/" target="_blank"><img src={require('../Images/instagram.png')} alt='instagram' align='middle' height="26" width="26" className="foo"/></a> </p>
-        <Link to="/Aboutme" className="foo2"><FaAngleDoubleRight size={30} color="white" id="foo2"/></Link>
+        <Link to="/Aboutme" id="foo2"><FaAngleDoubleRight size={30} color="white"/></Link>
     </div>
     );
   }

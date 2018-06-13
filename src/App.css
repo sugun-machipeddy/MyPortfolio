@@ -2,19 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 body{
-  background-color: black;
+  background-image: url(./Images/wallpaper.jpg);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
 }
 
 input{
   border: 2px solid silver;
   background-color: transparent;
   border-radius: 10px;
+  color: white;
 }
 
 textarea{
   border: 2px solid silver;
   background-color: transparent;
   border-radius: 10px;
+  color: white;
 }
 
 .image-radius{
@@ -22,7 +29,7 @@ border-radius: 50%;
 }
 
 .image-radius:hover{
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .foo{
@@ -30,12 +37,6 @@ border-radius: 50%;
   background-color: transparent;
   border: 0px;
 }
-
-.foo2{
-  align-self: flex-end;
-  animation: rightdirect 0.5s infinite;
-}
-
 
 .NavigationBarStyle{
   display: flex;
@@ -56,6 +57,7 @@ border-radius: 50%;
 }
 
 .small-menu-classname{
+
   padding-top: 5px;
   padding-left: 4px;
   display: flex;
@@ -102,7 +104,7 @@ a:active {
   left: 0;
   transition: transform .3s
               cubic-bezier(0, .52, 0, 1);
-  z-index: 3000;
+  z-index: 4000;
   }
 
 #flyoutMenu.hide {
@@ -147,17 +149,14 @@ a:active {
 }
 
 .App-About {
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
   padding-right: 10%;
   padding-left: 10%;
   font-family: 'Alegreya';
   font-size: 25px;
   color: #ECF0F1;
   text-align: left;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 #slide {
@@ -250,9 +249,23 @@ a:active {
     100% { top: 0; }
 }
 
+#foo2{
+  align-self: flex-end;
+}
+.foo3{
+  display: flex;
+  position: absolute;
+  position: fixed;
+  right: 5px;
+  z-index: 3000;
+  padding-top: 250px;
+}
 
-
-@keyframes rightdirect {
-  0% {right: 0px;}
-  100% {right: 10px;}
+.foo4{
+  display: flex;
+  position: absolute;
+  position: fixed;
+  left: 5px;
+  z-index: 3000;
+  padding-top: 250px;
 }

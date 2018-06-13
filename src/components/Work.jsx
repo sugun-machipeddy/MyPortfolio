@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 import {RightAlign} from '../Theme/styles.js';
+import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
+import {Link} from 'react-router-dom';
 
 const headerStyle={
   fontSize:'40px',
@@ -18,6 +20,9 @@ const companyStyle={
 export default class Work extends React.Component{
   render(){
     return(
+      <div>
+        <Link to="/Projects"><FaAngleDoubleRight size={30} color="white" className="foo3"/></Link>
+        <Link to="/Aboutme"><FaAngleDoubleLeft size={30} color="white" className="foo4"/></Link>
       <div className="App-About">
       <p style={headerStyle} >Work Experience</p>
       <p style={breakStyle}><u>Associate Software Engineer</u> (08/2016-07/2017)</p>
@@ -39,6 +44,7 @@ export default class Work extends React.Component{
         <li>We investigated the isnualtion thickness required for wires of different thickness for safe operation of aircrafts.</li>
       </ul>
     </div>
+  </div>
     );
   }
 }

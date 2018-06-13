@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
+import {Link} from 'react-router-dom';
 
 const headerStyle={
   fontSize:'40px',
@@ -18,6 +20,9 @@ const companyStyle={
 export default class Projects extends React.Component{
   render(){
     return(
+      <div>
+        <Link to="/Resume"><FaAngleDoubleRight size={30} color="white" className="foo3"/></Link>
+        <Link to="/Work"><FaAngleDoubleLeft size={30} color="white" className="foo4"/></Link>
       <div className="App-About">
         <p style={headerStyle}>Projects</p>
 
@@ -52,7 +57,7 @@ export default class Projects extends React.Component{
           view.  We used OpenCV to calibrate and rectify the Stereo Camera.
         </div>
 
-
+      </div>
       </div>
     );
   }
