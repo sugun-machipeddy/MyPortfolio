@@ -20,18 +20,18 @@ export default class Work extends React.Component{
     return(
       <div className="App-About">
       <p style={headerStyle} >Work Experience</p>
-      <p style={breakStyle}>Associate Software Engineer (08/2016-07/2017)</p>
+      <p style={breakStyle}><u>Associate Software Engineer</u> (08/2016-07/2017)</p>
       <p style={companyStyle}>Robert Bosch Enginnering and Business Solutions, INDIA.</p>
       <ul id="slide">
         <li>Built custom Linux distributions using YOCTO Project.</li>
         <li>Familiarized myself with Open Embedded Build Automation framework.</li>
-        <li>practiced Continuous Integration(CI) and Devops.</li>
+        <li>practiced Continuous Integration(CI) and DevOps.</li>
         <li>I was the lead for Generation3 SABRE iMX6 series of boards and manged the weekly releases of the distribution</li>
         <li> My other resposnibiites included delivering supplier releases and was second in charge of provoding Hot-fixes.</li>
         <li>I played a crucial role in Automating the smoke testing of boards using USB Cleware switches.</li>
       </ul>
 
-      <p style={breakStyle}>Research Intern (01/2016-04/2016)</p>
+      <p style={breakStyle}><u>Research Intern</u> (01/2016-04/2016)</p>
       <p style={companyStyle}>The University of Bologna, ITALY.</p>
       <ul id='slide1'>
         <li>Worked int the area of Partial discharges in magnet wires.</li>

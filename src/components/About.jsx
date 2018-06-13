@@ -48,7 +48,7 @@ export default class About extends React.Component{
         <WhenInView>
           {({isInView}) =>
           <RevealL hide={!isInView}>
-            I like to spend my free time either reading or watching TV seies. i also enjoy music and love travelling.
+            I like to spend my free time either reading or watching TV series. I also enjoy music and love travelling.
           </RevealL>}
         </WhenInView>
 
