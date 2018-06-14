@@ -5,8 +5,12 @@ import '../App.css';
 
 
 export default  class Home extends React.Component{
+  componentDidMount(){
+  window.scrollTo(0,0);
+  }
   render(){
     return(
+      <div>
       <div className="App">
         <p className="App-header">Hello! I'm Sugun Machipeddy</p> <br/>
         <p className="App-title">Engineer | Software Developer</p>
@@ -16,6 +20,7 @@ export default  class Home extends React.Component{
         <a href="https://www.instagram.com/sugun.machipeddy/" target="_blank"><img src={require('../Images/instagram.png')} alt='instagram' align='middle' height="26" width="26" className="foo"/></a> </p>
         <Link to="/Aboutme" id="foo2"><FaAngleDoubleRight size={30} color="white"/></Link>
     </div>
+      </div>
     );
   }
 }

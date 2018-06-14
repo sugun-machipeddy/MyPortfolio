@@ -20,7 +20,7 @@ export default class Menu extends Component {
            <Link to="/Aboutme" className="Menuitem">About me</Link>
            <Link to="/Work" className="Menuitem">Work</Link>
            <Link to="/Projects" className="Menuitem">Projects</Link>
-           <Link to="/Resume" className="Menuitem">Resume</Link>
+           <a href="https://standardresume.co/SugunMachipeddy" className="Menuitem">Resume</a>
       </div>
     );
   }

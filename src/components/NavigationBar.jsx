@@ -46,7 +46,7 @@ export default class NavigationBar extends React.Component{
             <Link to="/Aboutme" className="NavItemStyle">About me</Link>
             <Link to="/Work" className="NavItemStyle">Work</Link>
             <Link to="/Projects" className="NavItemStyle">Projects</Link>
-            <Link to="/Resume" className="NavItemStyle">Resume</Link>
+            <a href="https://standardresume.co/SugunMachipeddy" className="NavItemStyle">Resume</a>
           </ul>
         }
       />
