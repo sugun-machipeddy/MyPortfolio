@@ -8,6 +8,10 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.9;
+  padding-bottom: 200px;
+  border: 2px solid transparent;
+  overflow: auto;
+  height: 100%;
 }
 
 input{
