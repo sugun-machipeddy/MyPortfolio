@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
 import {Link} from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const headerStyle={
   fontSize:'40px',
@@ -24,13 +25,20 @@ export default class Projects extends React.Component{
   render(){
     return(
       <div>
+        <ReactCSSTransitionGroup
+        transitionAppear={true}
+        transitionAppearTimeout={1200}
+        transitionEnterTimeout={1200}
+        transitionLeaveTimeout={400}
+        transitionName='SlideIn'
+      >
         <a href="https://standardresume.co/SugunMachipeddy"><FaAngleDoubleRight size={30} color="white" className="foo3"/></a>
         <Link to="/Work"><FaAngleDoubleLeft size={30} color="white" className="foo4"/></Link>
       <div className="App-About">
         <p style={headerStyle}>Projects</p>
 
       <p style={breakStyle}><u>My Portfolio</u></p>
-          <div id="slide">
+          <div id="slide2">
             I built this site from scratch using only ReactJS.
             Working on this made me understand the many aspects of front-end development like layouts using Flexbox, routing and responsive design.
           </div> <br/>
@@ -59,6 +67,7 @@ export default class Projects extends React.Component{
         </div>
 
       </div>
+      </ReactCSSTransitionGroup>
       </div>
     );
   }

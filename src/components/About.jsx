@@ -4,6 +4,7 @@ import WhenInView from './WhenInView.jsx';
 import '../App.css';
 import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
 import {Link} from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 const headerStyle={
@@ -20,6 +21,13 @@ export default class About extends React.Component{
   render(){
     return(
       <div>
+        <ReactCSSTransitionGroup
+        transitionAppear={true}
+        transitionAppearTimeout={1200}
+        transitionEnterTimeout={1200}
+        transitionLeaveTimeout={400}
+        transitionName='SlideIn'
+      >
         <Link to="/Work"><FaAngleDoubleRight size={30} color="white" className="foo3"/></Link>
         <Link to="/"><FaAngleDoubleLeft size={30} color="white" className="foo4"/></Link>
       <div className="App-About">
@@ -76,6 +84,7 @@ export default class About extends React.Component{
           <button className="foo" type="submit"><img src={require('../Images/transparent.png')} alt='send' align='middle' height="40" width="40" /></button>
         </form>
         </div>
+        </ReactCSSTransitionGroup>
     </div>
     );
   }
