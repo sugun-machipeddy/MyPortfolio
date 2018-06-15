@@ -43,9 +43,3 @@ position: relative;
   }`
   }
 `;
-
-export const RightAlign= styled.p
-`
-text-align: right;
-margin: '0px';
-`

@@ -10,9 +10,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const headerStyle={
   fontSize:'40px',
 };
-const breakStyle={
-  fontSize:'25px',
-};
+
 
 export default class About extends React.Component{
   componentDidMount(){
@@ -54,7 +52,7 @@ export default class About extends React.Component{
           <RevealP hide={!isInView}>
             Previously, I worked as an Associate Software Engineer at Robert Bosch Engineering and Business Solutions, India.
             I was into Continuous Integration (CI) and practised DevOps.
-            we built custom Linux distributions for Automotive Infotainment Systems using <a href="https://www.yoctoproject.org/" target="_blank"><u>YOCTO Project</u></a> and I was the lead for Generation3 <a href="https://www.nxp.com/support/developer-resources/hardware-development-tools/sabre-development-system/sabre-for-automotive-infotainment-based-on-the-i.mx-6-series:RDIMX6SABREAUTO" target="_blank"><u>SABRE NXP iMX6 series of SOC’s</u></a>.
+            we built custom Linux distributions for Automotive Infotainment Systems using <a href="https://www.yoctoproject.org/" target="_blank" rel="noopener noreferrer"><u>YOCTO Project</u></a> and I was the lead for Generation3 <a href="https://www.nxp.com/support/developer-resources/hardware-development-tools/sabre-development-system/sabre-for-automotive-infotainment-based-on-the-i.mx-6-series:RDIMX6SABREAUTO" target="_blank" rel="noopener noreferrer"><u>SABRE NXP iMX6 series of SOC’s</u></a>.
           </RevealP>}
         </WhenInView>
 
@@ -63,7 +61,7 @@ export default class About extends React.Component{
           <RevealL hide={!isInView}>
             I also have a bachelor’s degree in Electrical and Electronics Engineering.
             As an undergraduate, I was sponsored to spend my final semester as an exchange student at The University of Bologna, Italy.
-            I even co-authored a research paper titled <a href="https://ieeexplore.ieee.org/document/7785627/" target="_blank"><u>"Modelling partial discharge inception in magnet wires at different altitudes"</u></a>.
+            I even co-authored a research paper titled <a href="https://ieeexplore.ieee.org/document/7785627/" target="_blank" rel="noopener noreferrer"><u>"Modelling partial discharge inception in magnet wires at different altitudes"</u></a>.
           </RevealL>}
         </WhenInView>
 

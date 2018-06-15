@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import {RightAlign} from '../Theme/styles.js';
 import {FaAngleDoubleRight, FaAngleDoubleLeft} from 'react-icons/lib/fa';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';

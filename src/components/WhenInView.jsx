@@ -10,7 +10,7 @@ constructor(props){
   this.onEnter = this.onEnter.bind(this);
 }
 onEnter({currentPosition}){
-  if (currentPosition == Waypoint.inside){
+  if (currentPosition === Waypoint.inside){
     this.setState({
       isInView:true
     });
