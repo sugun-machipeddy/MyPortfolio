@@ -37,13 +37,13 @@ export default class Projects extends React.Component{
       <div className="App-About">
         <p style={headerStyle}>Projects</p>
 
-      <p style={breakStyle}><u>My Portfolio</u></p>
+      <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/MyPortfolio" target="_blank">My Portfolio</a></u></p>
           <div id="slide2">
             I built this site from scratch using only ReactJS.
             Working on this made me understand the many aspects of front-end development like layouts using Flexbox, routing and responsive design.
           </div> <br/>
 
-        <p style={breakStyle}><u>Database Design</u></p>
+        <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/DatabaseDesign" target="_blank">Database Design</a></u></p>
         <div id="slide3">
           We modelled a hockey league intended for use by league managers and team owners.
           The database consists of teams, players, coaches, games, venues and merchandise sold by each team.
@@ -51,14 +51,14 @@ export default class Projects extends React.Component{
           Oracle was used to query the database and make changes to the database and the user interface was built using HTML.
         </div> <br/>
 
-      <p style={breakStyle}><u>RoboCode</u></p>
+      <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/Repo/tree/master/Neural_Networks/project" target="_blank">RoboCode</a></u></p>
         <div id='slide4'>
           I trained a 3 layered Neural Network using Reinforced learning (Q learning) method and Backpropagation algorithm.
           The Neural Network was implemented in a Robot battle tank and trained to learn the best move in any given state of the battle.
           The code was written entirely in Java.
         </div> <br/>
 
-      <p style={breakStyle}><u>Pick-up stereoscope camera for the da vinci Surgical System</u></p>
+      <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/Repo/tree/master/Robotics_code" target="_blank">Pick-up stereoscope camera for the da vinci Surgical System</a></u></p>
         <div id="slide5">
           The da Vinci Surgical System has a single endoscopic camera that provides a stereoscopic view of The surgical field.
           We introduced an additional camera to the da Vinci System that can be picked up by one of its arms.
