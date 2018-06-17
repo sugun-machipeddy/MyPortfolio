@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 body{
-  background-image: url(./Images/wallpaper.jpg);
+  /*background-image: url(./Images/wallpaper.jpg);*/
+  background-color: #ECF0F1  ;
   background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -15,17 +16,23 @@ body{
 }
 
 input{
-  border: 2px solid silver;
+  border: 2px solid black;
   background-color: transparent;
   border-radius: 10px;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 textarea{
-  border: 2px solid silver;
+  border: 2px solid black;
   background-color: transparent;
   border-radius: 10px;
-  color: white;
+  color: black;
+  font-weight: bold;
+}
+mark{
+  background-color: #AED6F1;
+  border-radius: 10px;
 }
 
 .image-radius{
@@ -47,7 +54,8 @@ border-radius: 50%;
   font-style: italic;
   font-family: 'Permanent Marker', 'cursive', 'Concert One';
   position: fixed;
-  background-color: #839192;
+  /*background-color: #839192;*/
+  background-color: black;
   top:0.5em;
   right:3em;
   z-index: 1000;
@@ -68,10 +76,12 @@ border-radius: 50%;
   margin-bottom: 0px;
 }
 a{
-  color: #ECF0F1;
+  /*color: #ECF0F1;*/
+  color: black;
 }
 a:hover {
   color: #F5B041;
+  /*color: #D35400;*/
 }
 a:link {
     text-decoration: none;
@@ -88,7 +98,7 @@ a:active {
 .Menuitem{
   padding: 15px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 @media all and (max-width: 800px){
@@ -104,7 +114,8 @@ a:active {
   font-size: 1.3em;
   width: 40vw;
   height: 100vh;
-  background-color: #AED6F1;
+  /*background-color: #AED6F1;*/
+  background-color: black;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -135,8 +146,9 @@ a:active {
 }
 
 .App-header {
-  color: #ECF0F1;
-  font-size: 2.7em;
+  /*color: #ECF0F1;*/
+  color: black;
+  font-size: 3em;
   margin-bottom: 0px;
   margin-top: 0px;
   font-style: italic;
@@ -144,14 +156,17 @@ a:active {
   padding-right: 5%;
   padding-left: 5%;
   text-align: center;
+  font-weight: bold;
 }
 
 .App-title {
   font-style: italic;
   font-family: 'Acme', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 0px;
-  color: #ECF0F1;
+  /*color: #ECF0F1;*/
+  color: black;
+  font-weight: bold;
 }
 
 .App-About {
@@ -161,7 +176,9 @@ a:active {
   padding-left: 10%;
   font-family: 'Alegreya';
   font-size: 20px;
-  color: #ECF0F1;
+  /*color: #ECF0F1;*/
+  color: black;
+  font-weight: bold;
   text-align: left;
 }
 

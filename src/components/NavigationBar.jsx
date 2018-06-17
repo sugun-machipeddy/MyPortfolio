@@ -35,8 +35,8 @@ export default class NavigationBar extends React.Component{
     return (
       <div>
       <ResponsiveMenu className='App'
-        menuOpenButton={<FaBars size={30} color="white" onClick={this.toggleMenu} className="small-menu-classname"/>}
-        menuCloseButton={<FaBars size={30} color="white" onClick={this.toggleMenu} className="small-menu-classname"/>}
+        menuOpenButton={<FaBars size={30} color="black" onClick={this.toggleMenu} className="small-menu-classname"/>}
+        menuCloseButton={<FaBars size={30} color="black" onClick={this.toggleMenu} className="small-menu-classname"/>}
         changeMenuOn="800px"
         largeMenuClassName="large-menu-classname"
         smallMenuClassName="small-menu-classname"

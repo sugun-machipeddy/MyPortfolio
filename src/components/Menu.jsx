@@ -15,7 +15,7 @@ export default class Menu extends Component {
       <div id="flyoutMenu"
            onMouseDown={this.props.handleMouseDown}
            className={visibility}>
-           <FaBars size={30} color="black" onClick={this.toggleMenu} className="small-menu-classname"/>
+           <FaBars size={30} color="white" onClick={this.toggleMenu} className="small-menu-classname"/>
            <Link to="/" className="Menuitem">Home</Link>
            <Link to="/Aboutme" className="Menuitem">About me</Link>
            <Link to="/Work" className="Menuitem">Work</Link>
