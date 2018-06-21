@@ -34,7 +34,7 @@ export default class Projects extends React.Component{
 
       <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/MyPortfolio" target="_blank" rel="noopener noreferrer">My Portfolio</a></u></p>
           <div id="slide2">
-            I built this site from scratch using ReactJS and hosted it using AWS S3 and CloudFront.
+            I built this site from scratch using ReactJS and hosted it on AWS using S3 and CloudFront.
             Working on this made me understand many aspects like layouts using Flexbox, hot reloading, routing, navigation and responsive design.
           </div> <br/>
 
@@ -58,7 +58,7 @@ export default class Projects extends React.Component{
       <p style={breakStyle}><u><a href="https://github.com/sugun-machipeddy/Repo/tree/master/Robotics_code" target="_blank" rel="noopener noreferrer">Pick-up stereoscope camera for the da vinci Surgical System</a></u></p>
         <div id="slide5">
           We introduced an additional camera to the da Vinci Surgical System that can be picked up by one of its arms and manipulated to provide the surgeon with an additional view of the surgical field and also offer better depth perception.
-          We designed a pick up probe and obtained a real time feed from the camera. I used OpenCV library in Pyhton to calibrate and rectify the Stereo Camera. I also made use of the methods available in OpenCV to localize the tool tip coordinates
+          We designed a pick up probe and obtained a real time feed from the camera. I used OpenCV library in Python to calibrate and rectify the Stereo Camera. I also made use of the methods available in OpenCV to localize the tool tip coordinates
           required for triangulation and computed the coordinate transformation matrix from the camera frame to the tool tip frame.
         </div>
 

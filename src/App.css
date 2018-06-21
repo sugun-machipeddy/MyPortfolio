@@ -3,13 +3,12 @@
 
 body{
   /*background-image: url(./Images/wallpaper.jpg);*/
-  background-color: #ECF0F1  ;
+  background-color: #ECF0F1;
   background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.9;
-  padding-bottom: 200px;
   border: 2px solid transparent;
   overflow: auto;
   height: 100%;
@@ -44,9 +43,9 @@ border-radius: 50%;
 }
 
 .foo{
-  padding: 5px;
   background-color: transparent;
   border: 0px;
+  padding: 3px;
 }
 
 .NavigationBarStyle{
@@ -69,7 +68,13 @@ border-radius: 50%;
 }
 
 .small-menu-classname{
-
+  padding-top: 5px;
+  padding-left: 4px;
+  display: flex;
+  margin-bottom: 0px;
+}
+.large-menu-classname{
+  display: flex;
   padding-top: 5px;
   padding-left: 4px;
   display: flex;
@@ -101,7 +106,15 @@ a:active {
   color: white;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 700px){
+  .large-menu-classname{
+    display: flex;
+    padding-top: 5px;
+    padding-left: 4px;
+    display: flex;
+    margin-bottom: 0px;
+  }
+
   .NavigationBarStyle{
     display: none;
   }
@@ -142,7 +155,7 @@ a:active {
   align-items: center;
   align-items: center;
   text-align: center;
-  padding-top: 13%;
+  margin-top: 13%;
 }
 
 .App-header {
@@ -218,7 +231,7 @@ a:active {
     flex-wrap: column-wrap;
     position: relative;
     font-size: 18px;
-    top: -1500px;
+    top: -2000px;
     animation: slide2 0.5s forwards;
     animation-delay: 1s;
 }
@@ -233,9 +246,9 @@ a:active {
     flex-wrap: column-wrap;
     position: relative;
     font-size: 18px;
-    top: -1500px;
+    top: -2000px;
     animation: slide3 0.5s forwards;
-    animation-delay: 1.2s;
+    animation-delay: 1.4s;
 }
 
 @keyframes slide3 {
@@ -248,9 +261,9 @@ a:active {
     flex-wrap: column-wrap;
     position: relative;
     font-size: 18px;
-    top: -1500px;
+    top: -2000px;
     animation: slide4 0.5s forwards;
-    animation-delay: 1.4s;
+    animation-delay: 1.8s;
 }
 
 @keyframes slide4 {
@@ -263,9 +276,9 @@ a:active {
     flex-wrap: column-wrap;
     position: relative;
     font-size: 18px;
-    top: -1500px;
+    top: -2000px;
     animation: slide5 0.5s forwards;
-    animation-delay: 1.6s;
+    animation-delay: 2.2s;
 }
 
 @keyframes slide5 {
@@ -281,7 +294,7 @@ a:active {
   position: fixed;
   right: 5px;
   z-index: 3000;
-  padding-top: 250px;
+  margin-top: 250px;
 }
 
 .foo4{
@@ -290,7 +303,7 @@ a:active {
   position: fixed;
   left: 5px;
   z-index: 3000;
-  padding-top: 250px;
+  margin-top: 250px;
 }
 
 .SlideIn-appear {

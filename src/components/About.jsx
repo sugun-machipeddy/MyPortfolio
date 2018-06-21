@@ -52,7 +52,7 @@ export default class About extends React.Component{
           <RevealP hide={!isInView}>
             Previously, I worked as an <mark>Associate Software Engineer</mark> at <mark>Robert Bosch Engineering and Business Solutions, India</mark>.
             I was into <mark>Continuous Integration (CI)</mark> and <mark>practised DevOps</mark>.
-            we built custom Linux distributions for Automotive Infotainment Systems using <a href="https://www.yoctoproject.org/" target="_blank" rel="noopener noreferrer"><u>YOCTO Project</u></a> and I was the lead for Generation3 <a href="https://www.nxp.com/support/developer-resources/hardware-development-tools/sabre-development-system/sabre-for-automotive-infotainment-based-on-the-i.mx-6-series:RDIMX6SABREAUTO" target="_blank" rel="noopener noreferrer"><u>SABRE NXP iMX6 series of SOC’s</u></a>.
+            We built custom Linux distributions for Automotive Infotainment Systems using <a href="https://www.yoctoproject.org/" target="_blank" rel="noopener noreferrer"><u>YOCTO Project</u></a> and I was the lead for Generation3 <a href="https://www.nxp.com/support/developer-resources/hardware-development-tools/sabre-development-system/sabre-for-automotive-infotainment-based-on-the-i.mx-6-series:RDIMX6SABREAUTO" target="_blank" rel="noopener noreferrer"><u>SABRE NXP iMX6 series of SOC’s</u></a>.
           </RevealP>}
         </WhenInView>
 
@@ -78,8 +78,7 @@ export default class About extends React.Component{
           <input type="email" name="email" placeholder="Your email" size="32"></input>
           <br/>
           <textarea name="message" placeholder="Your message" rows="9" cols="33"></textarea>
-          <br/>
-          <button className="foo" type="submit"><img src={require('../Images/Send2.png')} alt='send' align='middle' height="40" width="40" /></button>
+          <button className="foo" type="submit"><img src={require('../Images/Send2.png')} alt='send' align='middle' height="80" width="80" /></button>
         </form>
         </div>
         </ReactCSSTransitionGroup>
